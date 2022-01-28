@@ -77,13 +77,12 @@
         background-color: #008037;
         color: #fff;
     }
-    
-    main {
+    /* main {
         display: grid;
         grid-template-columns: 50px 100px align-items;
         padding: 15px;
         grid-gap: 10px;
-    }
+    } */
     
     #domain {
         grid-column: 1/2;
@@ -165,4 +164,9 @@
         nav li {
             margin: 0 auto;
         }
+    }
+    
+    table {
+        width: 80%;
+        padding: 20px;
     }
