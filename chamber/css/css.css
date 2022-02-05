@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: rgb(207, 207, 207);
+    font-family: 'Belleza', sans-serif;
+}
+
+#nav-bar {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.logo {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.time-div {
+    margin: 0.5rem;
+    border: 1px solid #bbb;
+    padding: 0.75rem;
+    background-color: #eee;
+    grid-column: 1/6;
+    grid-row: 2;
+    display: block;
+    text-align: center;
+}
+
+.icon-nav {
+    grid-column: 5/6;
+    grid-row: 1;
+}
+
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav {
+    grid-column: 2/5;
+    grid-row: 1;
+}
+
+.item {
+    margin-top: 30px;
+}
+
+nav li {
+    font-size: 1em;
+}
+
+#first {
+    margin-left: -50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #008037;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.4s;
+    font-family: 'Belleza', sans-serif;
+}
+
+.item a:hover {
+    background-color: #008037;
+    color: #fff;
+}
+
+.menu2 {
+    padding: 0px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+
+/* main {
+    display: grid;
+    grid-template-columns: 50px 100px align-items;
+    padding: 15px;
+    grid-gap: 10px;
+} */
+
+.paf {
+    width: 400px;
+    height: 200px;
+    background-color: grey;
+    padding: 20px;
+    margin: 1.5em;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: .2em;
+    padding: 1em;
+    background-color: #eee;
+}
+
+#last-cont {
+    grid-column: 1/5;
+    grid-row: 3;
+    text-align: center;
+}
+
+#footer-cont {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.footer img {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    margin-top: 4em;
+    margin-left: 2.7em;
+}
+
+.footer p {
+    font-family: 'Belleza', sans-serif;
+}
+
+@media only screen and (min-width:615px) {
+    nav button {
+        display: none;
+    }
+}

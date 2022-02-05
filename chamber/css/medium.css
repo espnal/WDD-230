@@ -1,0 +1,39 @@
+@media only screen and (max-width: 815px) {
+    nav {
+        grid-column: 1/6;
+        grid-row: 2;
+        margin-top: 1.5em;
+        text-align: center;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        line-height: 40px;
+        margin: 0 auto
+    }
+    nav li {
+        flex: 1 1 40%;
+    }
+    .logo {
+        grid-column: 3/6;
+        grid-row: 1;
+        align-items: center;
+    }
+    .time-div {
+        grid-column: 1/6;
+        grid-row: 3;
+    }
+    main .great-paf {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu2 {
+        grid-column: 5/6;
+        grid-row: 1;
+    }
+    #first {
+        margin-left: 0px;
+    }
+}
