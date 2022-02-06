@@ -80,7 +80,7 @@ li p {
 
 .btn-delete:hover {
     cursor: pointer;
-    background-color: lightseagreen;
+    background-color: rgb(78, 0, 0);
 }
 
 .btn-add {

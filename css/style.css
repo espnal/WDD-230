@@ -1,26 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .wholecontent {
     max-width: 550px;
-    max-height: 600px;
+    max-height: 800px;
     margin: 0 auto;
-    grid-gap: 0.5em;
-    padding: 25px;
+    padding: 2.5em;
     font-family: 'Roboto', sans-serif;
+    background-color: #fff;
 }
 
 .name-photo img {
     width: 120px;
     padding: 10px;
+    order: -1;
 }
 
 .name-photo h1 {
-    grid-column: 2/4;
-    grid-row: 1;
+    color: #fff;
+    margin-left: 1em;
 }
 
 .wholecontent h2 {
     grid-row: 2;
     margin-top: 25px;
+    text-align: center;
+    color: rgb(182, 182, 182);
 }
 
 .wholecontent ul li {
@@ -30,19 +33,36 @@
 
 .footer {
     text-align: center;
+    background-color: #00978b;
+    color: #fff;
+    padding: .1em;
+    border-radius: 8px;
+}
+
+li {
+    line-height: 1.5em;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+ul {
+    background-color: #00978b;
+    list-style-type: none;
+    padding: .8em;
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 .name-photo {
-    display: grid;
+    display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #afcaed;
-    box-shadow: 10px 10px 25px grey;
-    border-radius: 10px;
-    color: #000;
+    background-color: #00978b;
+    border-radius: 8px;
     font-family: 'Roboto', sans-serif;
-    grid-gap: 1em;
-    grid-template-columns: auto 1fr;
     height: 140px;
-    justify-items: center;
 }
