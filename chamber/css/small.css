@@ -61,7 +61,7 @@
         text-align: center;
     }
     #footer-cont {
-        grid-column: 1/4;
+        grid-column: 1/5;
         grid-row: 2/3;
         padding: 1em;
         text-align: center;
@@ -72,9 +72,11 @@
         margin: .5em;
     }
     .footer img {
-        grid-column: 1/4;
+        grid-column: 1/5;
         grid-row: 1;
-        width: 310px;
-        margin-left: 1.5em;
+        width: 90%;
+        margin-left: 1.8em;
+        margin-top: 0px;
+        text-align: center;
     }
 }
