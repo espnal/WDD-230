@@ -19,7 +19,7 @@
         text-align: center;
     }
     .menu2 {
-        margin-right: 0.5em;
+        margin-right: 1em;
     }
     nav li {
         margin: 0 auto;
@@ -47,6 +47,71 @@
     }
     #first {
         margin-right: 5em;
+    }
+    .great-paf2 {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        text-align: center;
+        grid-column: 1/4;
+        grid-row: 6;
+    }
+    #paf1 {
+        grid-column: 1/5;
+        grid-row: 3;
+    }
+    #paf1 img {
+        grid-column: 1/5;
+        grid-row: 1;
+        width: 100%;
+    }
+    #paf1 h2 {
+        grid-column: 1/5;
+        grid-row: 2;
+        text-align: center;
+    }
+    #paf1 p {
+        grid-column: 1/5;
+        grid-row: 3/4;
+        padding: 1em;
+    }
+    #paf2 h2 {
+        padding: .8em;
+    }
+    #paf3 {
+        grid-column: 1/5;
+        grid-row: 5;
+        text-align: center;
+    }
+    #paf3 span {
+        display: none;
+    }
+    #paf4 {
+        grid-column: 1/5;
+        grid-row: 4;
+        text-align: center;
+    }
+    #paf4 h2 {
+        grid-column: 1/5;
+        grid-row: 2;
+    }
+    #paf4 span {
+        display: block;
+        grid-column: 1/5;
+        grid-row: 3;
+        text-align: center;
+    }
+    #paf4 img {
+        grid-column: 1/5;
+        width: 100%
+    }
+    #paf5 {
+        grid-column: 1/4;
+        grid-row: 2;
+        height: 250px;
+    }
+    .show-banner {
+        height: 100px;
     }
     .footer {
         display: grid;
