@@ -53,7 +53,7 @@
         grid-template-columns: auto;
         align-items: center;
         text-align: center;
-        grid-column: 1/4;
+        grid-column: 1/5;
         grid-row: 6;
     }
     #paf1 {
@@ -74,6 +74,11 @@
         grid-column: 1/5;
         grid-row: 3/4;
         padding: 1em;
+    }
+    #paf2 {
+        position: relative;
+        width: 100%;
+        height: auto;
     }
     #paf2 h2 {
         padding: .8em;
@@ -106,12 +111,27 @@
         width: 100%
     }
     #paf5 {
-        grid-column: 1/4;
+        grid-column: 1/5;
         grid-row: 2;
         height: 250px;
     }
     .show-banner {
-        height: 100px;
+        height: 85px;
+        width: 335px;
+        top: 8em;
+        position: absolute;
+        margin: 0;
+    }
+    .show-banner button {
+        font-size: 1.2em;
+        padding: .5em;
+        width: 110px;
+        border: none;
+        font-weight: bold;
+        border-radius: 10px;
+        float: right;
+        color: #000;
+        margin-top: 1em;
     }
     .footer {
         display: grid;

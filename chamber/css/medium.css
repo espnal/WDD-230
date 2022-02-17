@@ -32,6 +32,10 @@
     #paf8 {
         display: none;
     }
+    .great-paf {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
     .great-paf2 {
         display: grid;
         grid-template-columns: auto auto;
@@ -65,7 +69,7 @@
         padding-left: .5em;
     }
     #paf2 {
-        grid-column: 1/ 4;
+        grid-column: 1/ 5;
         grid-row: 1;
     }
     #paf2 img {
@@ -92,7 +96,7 @@
         grid-row: 2;
     }
     #paf5 {
-        grid-column: 1/4;
+        grid-column: 1/5;
         grid-row: 2;
         height: 190px;
     }
