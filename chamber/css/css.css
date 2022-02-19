@@ -143,7 +143,8 @@ nav a {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     display: grid;
-    grid-template-columns: 1 auto;
+    grid-template-columns: auto;
+    position: relative;
 }
 
 #paf2 img {
@@ -157,6 +158,28 @@ nav a {
 
 #paf2 h2 {
     text-align: center;
+    height: -1em;
+    ;
+}
+
+#btn-p {
+    font-size: 1.2em;
+    padding: .5em;
+    width: 110px;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    float: right;
+    color: #000;
+    margin-top: 1em;
+    /* position: relative; */
+    right: 6.5em;
+    transition: all 0.4s;
+}
+
+#btn-p:hover {
+    background: #008037;
+    color: #ffffff;
 }
 
 #paf3 {
@@ -186,16 +209,16 @@ nav a {
 }
 
 #text {
-    font-size: 20px;
+    font-size: 22px;
     color: #f1f1f1;
     text-align: center;
 }
 
 .show-banner {
     background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
     padding: .5em;
-    margin: .4em;
+    position: absolute;
+    top: 9.2em;
 }
 
 

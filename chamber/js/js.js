@@ -36,8 +36,14 @@ function toggleMinBanner() {
 
 const date = new Date();
 const todaysdate = date.getDay();
-if (todaysdate == 1 || todaysdate == 4) {
+if (todaysdate == 1 || todaysdate == 6) {
     toggleMinBanner()
-    let x = document.querySelector("#text");
-    x.innerHTML = `🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.`
+
+
+    let div = document.querySelector(".show-banner");
+    // let parrf = x.innerHTML = ``;
+    div.innerHTML = `<p id="text">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+    <button id="btn-p">Join</button>`;
+} else {
+    named.remove();
 }

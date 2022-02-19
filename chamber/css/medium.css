@@ -71,6 +71,7 @@
     #paf2 {
         grid-column: 1/ 5;
         grid-row: 1;
+        position: initial;
     }
     #paf2 img {
         width: 100%;
@@ -101,7 +102,23 @@
         height: 190px;
     }
     .show-banner {
-        height: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 155px;
+        position: initial;
+        grid-row: 2;
+        padding: 1.5em;
+    }
+    .show-banner p {
+        grid-column: 1/5;
+        grid-row: 1;
+    }
+    #btn-p {
+        margin: auto;
+        height: 40px;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
     }
     #p-t5 {
         margin: 0px;

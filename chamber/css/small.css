@@ -10,7 +10,6 @@
     .logo {
         grid-column: 1/5;
         grid-row: 1;
-        margin-left: 45px;
     }
     nav {
         grid-column: 2/6;
@@ -80,8 +79,12 @@
         width: 100%;
         height: auto;
     }
+    #paf2 img {
+        position: relative;
+    }
     #paf2 h2 {
         padding: .8em;
+        position: relative;
     }
     #paf3 {
         grid-column: 1/5;
@@ -116,22 +119,19 @@
         height: 250px;
     }
     .show-banner {
-        height: 85px;
-        width: 335px;
-        top: 8em;
-        position: absolute;
-        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        height: 185px;
+        position: initial;
+        grid-row: 2;
+        padding: 1.5em;
     }
-    .show-banner button {
-        font-size: 1.2em;
-        padding: .5em;
-        width: 110px;
-        border: none;
-        font-weight: bold;
-        border-radius: 10px;
-        float: right;
-        color: #000;
-        margin-top: 1em;
+    #btn-p {
+        margin: auto;
+        height: 40px;
+        width: 100px;
+        align-items: center;
+        justify-content: center;
     }
     .footer {
         display: grid;
