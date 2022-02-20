@@ -30,13 +30,12 @@ const named = document.getElementById("min-banner");
 
 function toggleMinBanner() {
     named.classList.toggle("show-banner");
-    console.log('class attribute contains: ', named.className)
 }
 
 
 const date = new Date();
 const todaysdate = date.getDay();
-if (todaysdate == 1 || todaysdate == 6) {
+if (todaysdate == 1 || todaysdate == 0) {
     toggleMinBanner()
 
 

@@ -192,8 +192,19 @@ nav a {
 #paf4 {
     grid-column: 1/2;
     grid-row: 2;
-    display: grid;
-    grid-template-columns: 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+}
+
+#paf4 h2 {
+    font-size: 2.5em;
+}
+
+#temperature {
+    font-size: 2.5em;
+    text-align: center;
 }
 
 #paf5 {
