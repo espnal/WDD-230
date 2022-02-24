@@ -1,0 +1,59 @@
+#table {
+    width: 370px;
+    height: 300px;
+    font-size: 1.5em;
+    margin: 0 auto;
+    border: 1px solid rgba(158, 156, 156, 0.568);
+    font-family: Ubuntu, sans-serif;
+}
+
+thead {
+    color: white;
+    order: 0;
+}
+
+#caption1 {
+    order: -2;
+    margin-top: 1.2em;
+    background-color: rgb(145, 145, 145);
+    height: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    padding: .5em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+tr:first-child th {
+    background-color: black;
+    justify-content: space-evenly;
+    height: 2em;
+    align-items: center;
+}
+
+td {
+    padding: 0.3em;
+    border: 1px solid rgb(148, 145, 145);
+}
+
+.green {
+    background-color: rgba(21, 56, 85, 0.795);
+    color: white;
+}
+
+.grey {
+    background-color: rgba(212, 212, 212, 0.795);
+    color: rgb(0, 0, 0);
+}
+
+#lastmod {
+    caption-side: bottom;
+    font-size: 15px;
+    font-style: italic;
+    background-color: rgb(145, 145, 145);
+    font-weight: bold;
+    height: 1.5em;
+    padding: .5em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
