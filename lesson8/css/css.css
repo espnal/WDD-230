@@ -34,6 +34,7 @@ tr:first-child th {
 td {
     padding: 0.3em;
     border: 1px solid rgb(148, 145, 145);
+    text-align: center;
 }
 
 .green {
@@ -44,6 +45,10 @@ td {
 .grey {
     background-color: rgba(212, 212, 212, 0.795);
     color: rgb(0, 0, 0);
+}
+
+#best {
+    background-color: rgb(77, 6, 6);
 }
 
 #lastmod {
