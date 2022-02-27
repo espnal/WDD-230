@@ -193,9 +193,10 @@ nav a {
     grid-column: 1/2;
     grid-row: 2;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 1rem;
     justify-content: center;
+    align-items: center;
 }
 
 #paf4 h2 {
