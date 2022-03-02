@@ -21,7 +21,7 @@
     <div id="content">
         <header>
             <div id="nav-bar">
-                <img class="logo" src="images/Malteadas.png" alt="logo" style="width:240px">
+                <img class="logo" src="images/Malteadas.webp" alt="logo" style="width:240px">
 
                 <nav>
                     <button id="burg-btn">&#9776;</button>
@@ -58,7 +58,13 @@
                 <div class="paf" id="paf2">
                     <div id="min-banner">
                     </div>
-                    <img src="images/wdd230.jpg" alt="home available">
+                    <picture>
+                        <source media="(max-width: 200px)" srcset="images/wdd230_200.jpg">
+                        <source media="(max-width: 500px)" srcset="images/wdd230_500.jpg">
+                        <source media="(max-width: 800px)" srcset="images/wdd230_800.jpg">
+                        <img src="images/wdd230.jpg" alt="home available">
+                    </picture>
+
                     <h2>Pisicing elitlorem ipsum dolor</h2>
                     <p id="p-t2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate accusamus nisi minus repellat cum dolore nesciunt vitae libero. Aspernatur esse?, Modi cupiditate accusamus nisi minus repellat cum dolore nesciunt vitae Modi
                         cupiditate accusamus nisi minus repellat cum dolore nesciunt vitae
