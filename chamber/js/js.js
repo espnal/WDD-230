@@ -32,17 +32,16 @@ function toggleMinBanner() {
     named.classList.toggle("show-banner");
 }
 
+const remove = (named) => { named.remove(); }
 
 const date = new Date();
 const todaysdate = date.getDay();
-if (todaysdate == 1 || todaysdate == 0) {
+if (todaysdate == 1 || todaysdate == 2) {
     toggleMinBanner()
-
-
     let div = document.querySelector(".show-banner");
     // let parrf = x.innerHTML = ``;
     div.innerHTML = `<p id="text">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-    <button id="btn-p">Join</button>`;
+    <button id="btn-p">Join</button>`
 } else {
-    named.remove();
+    remove(named)
 }

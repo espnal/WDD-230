@@ -1,0 +1,45 @@
+body {
+    text-align: center
+}
+
+section {
+    border: 1px solid rgb(53, 0, 138);
+    background-color: #b9b9cc;
+    margin-bottom: 1em;
+    padding: 1.5em;
+}
+
+section img {
+    height: auto;
+    width: 230px;
+    padding: 1em;
+    box-shadow: 0px 0px 15px 8px black;
+    margin-top: 0.5em;
+    ;
+}
+
+h1,
+h2 {
+    font-size: 36px;
+    color: #252555;
+    margin: 0;
+}
+
+section p {
+    font-size: 22px;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        margin-bottom: 1em;
+    }
+    section {
+        height: 100%;
+        padding: 0;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 10px;
+    }
+}
