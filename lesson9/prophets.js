@@ -47,3 +47,5 @@ fetch(requestURL)
         const prophets = jsonObject['prophets'];
         prophets.forEach(displayProphets);
     });
+
+`Welcome back ${firstName}! You last visited on <date>${lvdate}</date>.`;

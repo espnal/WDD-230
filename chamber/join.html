@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House hold Mountain Chamber</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <script defer src="js/js.js"></script>
+
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div id="nav-bar">
+                <img class="logo" src="images/Malteadas.webp" alt="logo" style="width:240px">
+
+                <nav>
+                    <button id="burg-btn">&#9776;</button>
+                    <ul id="menu">
+                        <li id="first" class="item"><a href="https://espnal.github.io/wdd230/lesson3/index.html">Home</a></li>
+                        <li class="item"><a href="https://espnal.github.io/wdd230/chamber/discover.html">Disvover</a></li>
+                        <li class="item"><a href="https://espnal.github.io/wdd230/lesson3/color-scheme.html">Join</a></li>
+                        <li class="item"><a href="https://espnal.github.io/wdd230/lesson3/typography.html">Typography</a></li>
+                    </ul>
+                </nav>
+                <ul class="menu2">
+                    <li class="item2">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img class="footer-icon" src="images/instagram.png" alt="Instagram" style="width:35px; margin-top: 3px;"></a>
+                    </li>
+                    <li class="item2">
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <img class="footer-icon" src="images/linkedin.png" alt="LinKedin" style="width:40px; margin-top: -1px;"></a>
+                    </li>
+                </ul>
+                <div class="time-div">
+                    <p class="time-div"></p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container-form">
+                <h1>Aplication to join</h1>
+                <form method="get" action="thanks.html">
+                    <fieldset>
+                        <legend>Personal information</legend>
+                        <label class="top">First Name* <input type="text" name="fname" required></label>
+                        <label class="top">Last Name* <input type="text" name="lname" required></label>
+                        <label class="top">A business position title<input type="text" name="position-box" required minlength="7" maxlength="7" pattern="[a-zA-Z0-9'-'\s]*"></label>
+                        <label class="top">Email* <input type="email" name="email" placeholder="Emailaddress@gmail.com" required></label>
+                        <label class="top">Phone number* <input type="cel" name="cellp" required></label>
+                        <label class="top">Business Name <input type="text" name="bname" required></label>
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Membership Package</legend>
+                        <label>Select your current status</label>
+                        <select name="title">
+                        <option value="">Select option</option>
+                        <option value="">Employ</option>
+                        <option value="">Business owner</option>
+                        <option value="">Entrepreneur</option>
+                        <option value="">Retired</option>
+                    </select>
+                        <label class="sbs" id="sbs-f"><input type="radio" name="membership" > NP Membership is for non profit organizations and there is no fee. ($0.00)</label>
+                        <label class="sbs" id="sbs-b"><input type="radio" name="membership" > Bronze Membership, has personalized suggestions for your business ($3.50)</label>
+                        <label class="sbs" id="sbs-s"><input type="radio" name="membership" > Silver Membership, has bronze privileges, and your profile is shown to the best buyers. ($6.00)</label>
+                        <label class="sbs" id="sbs-g"><input type="radio" name="membership" > Gold Membership, has bronze, silver privileges and also has a very high possibility of receiving good reviews. ($12.00)</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Additional Information </legend>
+                        <label>Business Description</label><br>
+                        <textarea class="b-description" name="comments" cols="30" rows="10" spellcheck="false"></textarea>
+                        <input class="btn" type="submit" value="Buy membership">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <img src="images/Malteadas.png" alt="logo">
+                <div id="footer-cont">
+                    <p>info@timbuktucc.org</p>
+                    <p>+(223) 2070-2300</p>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15142.37546793005!2d-68.96587005!3d18.411326199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sdo!4v1644025502169!5m2!1ses-419!2sdo" width="250" height="175" style="border:0;"
+                        allowfullscreen="" loading="lazy"></iframe>
+
+                </div>
+
+                <div id="last-cont">
+                    <hr>
+                    <p style="padding: 12px">©2022 | Roguin P. Espinal | WDD 230 Project | <span class="time"></span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

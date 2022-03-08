@@ -1,31 +1,50 @@
 let imagesToLoad = document.querySelectorAll('img[data-src]');
 
-const loadImages = (image) => {
-    image.setAttribute('src', image.getAttribute('data-src'));
-    image.onload = () => {
-        image.removeAttribute('data-src');
-    };
+const imgOptions = {
+    threshold: 1,
+    rootMargin: "0px 0px -250px 0px"
 };
 
-const options = {
-    threshold: 0,
-    rootMargin: "0px 0px -500px 0px"
-};
 
-if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((items, observer) => {
-        items.forEach((item) => {
-            if (item.isIntersecting) {
-                loadImages(item.target);
-                observer.unobserve(item.target);
-            }
-        });
-    });
-    imagesToLoad.forEach((img) => {
-        observer.observe(img);
-    });
-} else {
-    imagesToLoad.forEach((img) => {
-        loadImages(img);
-    });
+function preloadImage(image) {
+    const src = image.getAttribute('data-src');
+    if (!src) {
+        return
+    }
+    image.src = src;
+
 }
+
+
+const imgObserver = new IntersectionObserver((entries,
+    imgObserver) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) { return; } else {
+            preloadImage(entry.target);
+            imgObserver.unobserve(entry.target);
+        }
+    });
+}, imgOptions)
+
+imagesToLoad.forEach(image => {
+    imgObserver.observe(image);
+})
+
+
+
+const todayDisplay = document.querySelector(".today");
+const visitsDisplay = document.querySelector(".visits");
+
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = `This is your first visit!`;
+}
+
+// increment the number of visits.
+numVisits++;
+// store the new number of visits value
+localStorage.setItem("visits-ls", numVisits);
+todayDisplay.textContent = Date.now();

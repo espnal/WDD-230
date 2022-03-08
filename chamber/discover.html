@@ -49,25 +49,64 @@
             </div>
         </header>
         <main>
+            <h1 id="h1-disc">Disvover and Admire</h1>
+            <div class="storage">
+                <p>This demonstration page keeps tracks of the number of the total number of visits by user utilizing the localStorage options of the Web Storage API.</p>
+                <p><span class="label"><strong>Number of Visits: </strong></span><span class="visits"></span></p>
+                <p>Current Page Load Timestamp: <span class="today" style="color: #008037;"></span> in milliseconds.</p>
+            </div>
             <div class="container-discover">
-                <picture>
-                    <img src="images/image-placeholder.jpg" data-src="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXJiYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="city">
-                </picture>
-                <picture>
-                    <img src="images/image-placeholder.jpg" data-src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Tokyo">
-                </picture>
-                <picture>
-                    <img src="images/image-placeholder.jpg" data-src="https://images.unsplash.com/photo-1465447142348-e9952c393450?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="view">
-                </picture>
-                <picture>
-                    <img src="images/image-placeholder.jpg" data-src="https://images.unsplash.com/photo-1547841243-eacb14453cd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="view">
-                </picture>
-                <picture>
-                    <img src="images/image-placeholder.jpg" data-src="https://images.unsplash.com/photo-1524168272322-bf73616d9cb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="view">
-                </picture>
-                <picture>
-                    <img src="images/image-placeholder.jpg" data-src="https://images.unsplash.com/photo-1608501078713-8e445a709b39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzh8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="colored city">
-                </picture>
+                <div class="disc-blocks">
+                    <h2>New York</h2>
+                    <picture>
+                        <img data-src="https://images.unsplash.com/photo-1507090960745-b32f65d3113a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXJiYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="city">
+                        <div class="overlay">lorem ipsum dolor sit amet, consectetur adipisicing</div>
+                    </picture>
+
+                </div>
+                <div class="disc-blocks">
+                    <h2>Japan, Tokyo</h2>
+                    <picture>
+                        <img data-src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Tokyo">
+                        <div class="overlay">lorem ipsum dolor sit amet, consectetur adipisicing</div>
+                    </picture>
+
+                </div>
+                <div class="disc-blocks">
+                    <h2>Road seen from above</h2>
+                    <picture>
+                        <img data-src="https://images.unsplash.com/photo-1465447142348-e9952c393450?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="view">
+                        <div class="overlay">lorem ipsum dolor sit amet, consectetur adipisicing</div>
+                    </picture>
+
+                </div>
+                <div class="disc-blocks">
+                    <h2>A city in the bay</h2>
+                    <picture>
+                        <img data-src="https://images.unsplash.com/photo-1547841243-eacb14453cd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="view">
+                        <div class="overlay">lorem ipsum dolor sit amet, consectetur adipisicing</div>
+                    </picture>
+
+                </div>
+                <div class="disc-blocks">
+                    <h2>Illinois, Chicago</h2>
+                    <picture>
+                        <img data-src="https://images.unsplash.com/photo-1524168272322-bf73616d9cb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="view">
+                        <div class="overlay">lorem ipsum dolor sit amet, consectetur adipisicing</div>
+                    </picture>
+
+                </div>
+                <div class="disc-blocks">
+                    <h2>Sunset in the city</h2>
+                    <picture>
+                        <img data-src="https://images.unsplash.com/photo-1608501078713-8e445a709b39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzh8fGNpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="colored city">
+                        <div class="overlay">lorem ipsum dolor sit amet, consectetur adipisicing</div>
+                    </picture>
+
+                </div>
+
+
+
             </div>
         </main>
         <footer>

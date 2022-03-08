@@ -182,4 +182,82 @@
         margin-top: 0px;
         text-align: center;
     }
+    .container-form {
+        padding: 1em;
+        min-height: 20rem;
+    }
+    .container-form h1 {
+        text-align: center;
+    }
+    form fieldset {
+        margin: 2rem 0;
+        border: 1px solid #008037;
+        border-radius: 10px;
+        padding: .5em;
+        width: 100%;
+        max-width: 400px;
+    }
+    form legend {
+        color: #008037;
+        margin: 0 1rem;
+        padding: 0 .5rem;
+    }
+    form label.top,
+    form div {
+        display: block;
+    }
+    form label.top input,
+    form label.top select {
+        display: block;
+        font-size: 1rem;
+        border-radius: 4px;
+        padding: .75rem;
+        width: 100%;
+        max-width: 25rem;
+        height: 2rem;
+        border: 1px solid rgb(153, 153, 153);
+        background-color: rgba(126, 126, 126, 0.315)
+    }
+    form label.sbs {
+        display: block;
+        padding: .7rem .7rem 2px .7rem;
+        margin-top: .4rem;
+    }
+    #sbs-f {
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+    #sbs-b {
+        background-color: rgb(168, 62, 0);
+        border-radius: 10px;
+        border: 1px solid #000;
+        color: #fff;
+    }
+    #sbs-s {
+        background-color: rgb(223, 223, 223);
+        border-radius: 10px;
+        border: 1px solid #000;
+        color: #000;
+    }
+    #sbs-g {
+        background-color: rgb(199, 190, 62);
+        border-radius: 10px;
+        border: 1px solid #000;
+        color: #000;
+    }
+    .b-description {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .btn {
+        width: 100%;
+        height: 30px;
+        background-color: #008037;
+        border-radius: 5px;
+        color: #fff;
+        border-color: transparent;
+    }
+    .btn:hover {
+        background-color: rgb(0, 58, 5);
+    }
 }
