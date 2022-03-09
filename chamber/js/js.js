@@ -22,10 +22,6 @@ const field = document.querySelector(".time");
 field.innerHTML = `Last Modification: ${document.lastModified}`;
 
 
-
-
-
-
 const named = document.getElementById("min-banner");
 
 function toggleMinBanner() {
@@ -45,3 +41,11 @@ if (todaysdate == 1 || todaysdate == 2) {
 } else {
     remove(named)
 }
+
+
+const number = getTime()
+localStorage.setItem("visitUpdate", number);
+
+// Form page hidden date
+let formVisit = document.getElementById("formvisit");
+formVisit.textContent = `Visited this form on: ${requestedFormat.format(Date.now())}`;
