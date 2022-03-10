@@ -54,11 +54,10 @@ const btnForm = document.querySelector(".btn");
 
 btnForm.addEventListener("click", () => {
     let currentDate = fulldate;
-    console.log(currentDate)
+    return currentDate
 })
 
 hiddenDate.pickadate({
     formatSubmit: currentDate,
     hiddenName: true
 })
-console.log(date)
