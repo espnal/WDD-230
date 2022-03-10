@@ -28,7 +28,9 @@ function toggleMinBanner() {
     named.classList.toggle("show-banner");
 }
 
-const remove = (named) => { named.remove(); }
+const remove_ = (named) => {
+    named.remove()
+}
 
 const date = new Date();
 const todaysdate = date.getDay();
@@ -39,7 +41,7 @@ if (todaysdate == 1 || todaysdate == 2) {
     div.innerHTML = `<p id="text">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
     <button id="btn-p">Join</button>`
 } else {
-    remove(named)
+    remove_(named)
 }
 
 
@@ -47,5 +49,16 @@ const number = getTime()
 localStorage.setItem("visitUpdate", number);
 
 // Form page hidden date
-let formVisit = document.getElementById("formvisit");
-formVisit.textContent = `Visited this form on: ${requestedFormat.format(Date.now())}`;
+const hiddenDate = document.querySelector(".formvisit");
+const btnForm = document.querySelector(".btn");
+
+btnForm.addEventListener("click", () => {
+    let currentDate = fulldate;
+    console.log(currentDate)
+})
+
+hiddenDate.pickadate({
+    formatSubmit: currentDate,
+    hiddenName: true
+})
+console.log(date)

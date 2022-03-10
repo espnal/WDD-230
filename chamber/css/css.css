@@ -397,6 +397,14 @@ form label.top select {
     background-color: rgba(126, 126, 126, 0.315)
 }
 
+input::placeholder {
+    font-size: 13px;
+}
+
+form label.top input:hover {
+    border-color: rgb(14, 124, 56);
+}
+
 form label.sbs {
     display: block;
     padding: .7rem .7rem 2px .7rem;
