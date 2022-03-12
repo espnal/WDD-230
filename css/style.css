@@ -50,6 +50,7 @@ ul {
     list-style-type: none;
     padding: .8em;
     margin-bottom: 0px;
+    border-radius: 8px;
 }
 
 a {
