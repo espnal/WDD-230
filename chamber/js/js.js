@@ -50,13 +50,18 @@ localStorage.setItem("visitUpdate", number);
 
 const hiddenDate = document.querySelector(".formvisit");
 const btnForm = document.querySelector(".btn");
+const currentDate_ = ""
 
-const currentDate = btnForm.addEventListener("click", () => {
-    return fulldate;
+function getTheCurrentDate(x) {
+    currentDate_ = x
+    return currentDate_;
+}
 
-})
+btnForm.addEventListener("click", getTheCurrentDate(fulldate));
+
 
 hiddenDate.pickadate({
+    format: 'dd-mm-yyyy',
     formatSubmit: currentDate,
     hiddenName: true
 })
