@@ -1,12 +1,14 @@
 // Div that will contain the time at navigation bar
-const datefield = document.querySelector(".time-div");
+function datebox() {
+    const datefield = document.querySelector(".time-div");
 
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-    now
-);
-datefield.innerHTML = `<em>${fulldate}</em>`;
-
+    const now = new Date();
+    const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+        now
+    );
+    return datefield.innerHTML = `<em>${fulldate}</em>`;
+}
+datebox();
 // Create button menu 
 function toggleMenu() {
     document.getElementById("menu").classList.toggle("open");
@@ -34,34 +36,8 @@ const todaysdate = date.getDay();
 if (todaysdate == 1 || todaysdate == 2) {
     toggleMinBanner();
     let div = document.querySelector(".show-banner");
-    // let parrf = x.innerHTML = ``;
     div.innerHTML = `<p id="text">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
     <button id="btn-p">Join</button>`;
 } else {
     named.remove();
 }
-
-
-
-
-// Form page hidden date
-const number = now.getTime();
-localStorage.setItem("visitUpdate", number);
-
-const hiddenDate = document.querySelector(".formvisit");
-const btnForm = document.querySelector(".btn");
-const currentDate_ = ""
-
-function getTheCurrentDate(x) {
-    currentDate_ = x
-    return currentDate_;
-}
-
-btnForm.addEventListener("click", getTheCurrentDate(fulldate));
-
-
-hiddenDate.pickadate({
-    format: 'dd-mm-yyyy',
-    formatSubmit: currentDate,
-    hiddenName: true
-})

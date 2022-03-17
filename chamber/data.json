@@ -1,0 +1,92 @@
+[{
+        "name": "Bechtel",
+        "address": "2800 Decker Dr, Baytown, TX 77520",
+        "phone_number": "(713) 235-4406",
+        "image": "images/Bechtel.jpg",
+        "url": "http://www.bechtel.com"
+    },
+    {
+        "name": "Turner Construction",
+        "address": "10100 Reunion Pl, Unit 705, San Antonio, TX 78216",
+        "phone_number": "(210) 787-3136",
+        "image": "images/turner.jpg",
+        "url": "http://www.turnerconstruction.com"
+    },
+    {
+        "name": "AECOM Hunt",
+        "address": "1000 E 87th St, Chicago, IL 60619",
+        "phone_number": "(312) 462-3257",
+        "image": "images/AECOM_Hunt.png",
+        "url": "http://www.AECOMHunt.com"
+    },
+    {
+        "name": "Gilbane Building Company",
+        "address": "1950 Ringling Blvd, Sarasota, FL 34236",
+        "phone_number": "(941) 758-6441",
+        "image": "images/Gilbane.jpg",
+        "url": "http://www.Gilbane.com"
+    },
+    {
+        "name": "Whiting-Turner",
+        "address": "5323 Millenia Lakes Blvd, Orlando, FL 32839",
+        "phone_number": "(407) 370-4500",
+        "image": "images/Whiting-Turner.jpg",
+        "url": "http://www.Whiting-Turner.com"
+    },
+    {
+        "name": "Kiewit",
+        "address": "10704 Shoemaker Ave, Santa Fe Springs, CA 90670",
+        "phone_number": "(562) 946-1816",
+        "image": "images/Kiewit.jpg",
+        "url": "http://www.Kiewit.com"
+    },
+    {
+        "name": "McDermott International",
+        "address": "757 N Eldridge, Houston, TX 77079",
+        "phone_number": "(281) 870-5000",
+        "image": "images/McDermott-International.png",
+        "url": "http://www.McDermottInternational.com"
+    },
+    {
+        "name": "StructureTone",
+        "address": "851 T ridge, Austin, TX 78079",
+        "phone_number": "(213) 694-3623",
+        "image": "images/StructureTone.png",
+        "url": "http://www.StructureTone.com"
+    },
+    {
+        "name": "Skanska",
+        "address": "633 W 5th St, Los Angeles, CA 90071",
+        "phone_number": "(213) 694-3623",
+        "image": "images/Skanska.png",
+        "url": "http://www.Skanska.com"
+    },
+    {
+        "name": "PCL Construction",
+        "address": "3650 131st Ave SE, Unit 650, Bellevue, WA 98006",
+        "phone_number": "(425) 454-8020",
+        "image": "images/PCL.png",
+        "url": "http://www.PCL.com"
+    },
+    {
+        "name": "Fluor Corporation",
+        "address": "833 T 9th St, Los Angeles, CA 80071",
+        "phone_number": "Germany",
+        "image": "images/Fluor.jpg",
+        "url": "http://www.Fluor.com"
+    },
+    {
+        "name": "Lendlease",
+        "address": "200 Park Avenue 9th Floor New York, NY 10166",
+        "phone_number": "212 592 6700",
+        "image": "images/lendlease.png",
+        "url": "https://www.lendlease.com"
+    }
+
+
+
+
+
+
+
+]

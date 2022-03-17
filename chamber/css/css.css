@@ -5,7 +5,7 @@
 }
 
 body {
-    max-width: 960px;
+    max-width: 100%;
     margin: 0 auto;
     background-color: rgb(207, 207, 207);
     font-family: 'Belleza', sans-serif;
@@ -38,7 +38,7 @@ body {
 }
 
 #content {
-    max-width: 960px;
+    max-width: 1080px;
     margin: 0 auto;
     background-color: white;
 }
@@ -93,7 +93,6 @@ nav a {
 .great-paf {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(3, 1fr); */
     padding: .8em;
     grid-gap: 10px;
 }
@@ -373,17 +372,20 @@ figcaption {
 
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #008037;
+    border: 2px solid #008037;
     border-radius: 10px;
     padding: .5em;
     width: 100%;
     max-width: 600px;
+    margin: 0 auto;
 }
 
 form legend {
     color: #008037;
     margin: 0 1rem;
-    padding: 0 .5rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 form label.top,
@@ -394,14 +396,14 @@ form div {
 form label.top input,
 form label.top select {
     display: block;
-    font-size: 1rem;
+    font-size: .8rem;
     border-radius: 4px;
     padding: .75rem;
     width: 100%;
     max-width: 25rem;
     height: 2rem;
     border: 1px solid rgb(153, 153, 153);
-    background-color: rgba(126, 126, 126, 0.315)
+    background-color: rgba(126, 126, 126, 0.315);
 }
 
 input::placeholder {

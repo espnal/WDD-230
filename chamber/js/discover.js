@@ -47,20 +47,18 @@ if (numVisits !== 0) {
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
-
-
-
 // Day count & Visit count
 
 const daycount = document.getElementById("number-visits");
-// let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
-let thisVisit = "";
-let lastVisit = window.localStorage.getItem("visitUpdate");
+
+const thisVisit = new Date();
+const lastVisit = window.localStorage.getItem("visitUpdate");
 
 if (lastVisit !== null) {
-    var timeDifference = thisVisit.getTime() - numVisits;
-    var dayDifference = Math.floor(timeDifference / (1000 * 3600 * 24));
+    let timeDifference = thisVisit.getTime();
+    let dayDifference = parseInt(timeDifference / (1000 * 60 * 60 * 24));
+    console.log(dayDifference)
     if (dayDifference < 1) {
         daycount.textContent = `Welcome back! Your last visit was today.`;
     } else if (dayDifference == 1) {
