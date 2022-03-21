@@ -490,6 +490,7 @@ form legend {
 form label.top,
 form div {
     display: block;
+    line-height: 1.7em;
 }
 
 form label.top input,
@@ -515,8 +516,8 @@ form label.top input:hover {
 
 form label.sbs {
     display: block;
-    padding: .7rem .7rem 2px .7rem;
-    margin-top: .4rem;
+    padding: .6em;
+    margin-top: 1rem;
 }
 
 #sbs-f {
@@ -543,6 +544,10 @@ form label.sbs {
     border-radius: 10px;
     border: 1px solid #000;
     color: #000;
+}
+
+.b-header {
+    font-size: 17px;
 }
 
 .b-description {
@@ -589,6 +594,29 @@ form label.sbs {
 
 .logo-company img {
     width: 100%;
+}
+
+.banner-container img {
+    width: 100%;
+    /* position: relative; */
+}
+
+form label.form-control,
+form div {
+    display: block;
+    line-height: 1.7em;
+}
+
+form label.form-control input {
+    height: 300px
+}
+
+.contact-div {
+    /* position: absolute; */
+    /* bottom: 6em; */
+    color: #000;
+    font-size: 50px;
+    /* right: 5em; */
 }
 
 @media (min-width: 768px) {

@@ -2,11 +2,21 @@
 // js.toggleMenu()
 // js.toggleMinBanner()
 // js.datebox()
-const mainDiv = document.querySelector(".directory");
-const secondDiv = document.querySelector(".directory-list");
-const li_links = document.querySelectorAll(".links ul li");
+// const mainDiv = document.querySelector(".directory");
+// const secondDiv = document.querySelector(".directory-list");
+const grid = document.getElementById("grid");
+const list = document.querySelector("#list");
 
-function displayCards(cards) {
+function toggleClassone() {
+    const class_name = document.getElementById("directory-list").classList.toggle("directory")
+    return class_name
+}
+grid.onclick = toggleClassone;
+
+
+
+
+function displayCards(cards, x) {
     // Create elements to add to the document
     let card_section = document.createElement('section');
     let h2 = document.createElement('h2');
@@ -36,7 +46,7 @@ function displayCards(cards) {
 
 
     // Add/append the existing HTML div with the cards class with the section(card)
-    mainDiv.appendChild(card_section);
+    class_name.appendChild(card_section);
 }
 
 function displayList(cards) {
@@ -67,27 +77,6 @@ fetch(url)
     .then((jsonObject) => {
         console.table(jsonObject);
         const cards = jsonObject["companies"];
+        cards.forEach(displayCards);
 
-        li_links.forEach(function(link) {
-            link.addEventListener("click", function() {
-                li_links.forEach(function(link) {
-                    link.classList.remove("active");
-                })
-
-                link.classList.add("active");
-
-
-                let li_view = link.getAttribute("data-view");
-
-                view_wraps.forEach(function(view) {
-                    view.style.display = "none";
-                })
-
-                if (li_view == "list-view") {
-                    list_view.style.display = "block";
-                } else {
-                    grid_view.style.display = "block";
-                }
-            })
-        })
     })
