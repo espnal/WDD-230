@@ -1,0 +1,24 @@
+{
+    "companies": [{
+            "name": "Thankful Transport",
+            "icon": "images/truck.png",
+            "frase": "We get it there for you!",
+            "email": "thank@transsupport.com",
+            "phoneNumber": "+1 829-467-0034"
+        },
+        {
+            "name": "Union lawyer",
+            "icon": "images/compliant.png",
+            "frase": "Get your loan accessory",
+            "email": "union@law.com",
+            "phoneNumber": "+1 839-227-0837"
+        },
+        {
+            "name": "Build a treefort",
+            "icon": "images/casa-del-arbol.png",
+            "frase": "Over 1000 Plans!",
+            "email": "build@treefort.com",
+            "phoneNumber": "+1 839-327-0844"
+        }
+    ]
+}

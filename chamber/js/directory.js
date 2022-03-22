@@ -7,16 +7,9 @@
 const grid = document.getElementById("grid");
 const list = document.querySelector("#list");
 
-function toggleClassone() {
-    const class_name = document.getElementById("directory-list").classList.toggle("directory")
-    return class_name
-}
-grid.onclick = toggleClassone;
+const directory = document.querySelector("#directory")
 
-
-
-
-function displayCards(cards, x) {
+function displayCards(cards) {
     // Create elements to add to the document
     let card_section = document.createElement('section');
     let h2 = document.createElement('h2');
@@ -27,7 +20,7 @@ function displayCards(cards, x) {
     newDiv.className = "logo-company"
 
     // Change the textContent property of the h2 element to contain the prophet's full name
-    h2.textContent = `${ cards.name }`
+    h2.textContent = `${cards.name}`
     p.innerHTML = `<strong>Address: </strong> ${cards.address}`
     p2.innerHTML = `<strong>Phone number: </strong> ${cards.phone_number}`
 
@@ -46,8 +39,10 @@ function displayCards(cards, x) {
 
 
     // Add/append the existing HTML div with the cards class with the section(card)
-    class_name.appendChild(card_section);
+    directory.appendChild(card_section);
 }
+
+
 
 function displayList(cards) {
     // Create elements to add to the document
@@ -57,7 +52,7 @@ function displayList(cards) {
     let p2 = document.createElement('p');
 
     // Change the textContent property of the h2 element to contain the prophet's full name
-    h2.textContent = `${ cards.name }`
+    h2.textContent = `${cards.name}`
     p.innerHTML = `<strong>Address: </strong> ${cards.address}`
     p2.innerHTML = `<strong>Phone number: </strong> ${cards.phone_number}`
 
@@ -68,7 +63,8 @@ function displayList(cards) {
 
 
     // Add/append the existing HTML div with the cards class with the section(card)
-    secondDiv.appendChild(card_section);
+    directory.appendChild(card_section);
+
 }
 const url = "data/data.json";
 
@@ -78,5 +74,20 @@ fetch(url)
         console.table(jsonObject);
         const cards = jsonObject["companies"];
         cards.forEach(displayCards);
+        list.addEventListener("click", () => {
+
+            let i = true
+            if (directory.length != cards.length, i = true) {
+                console.log(i)
+                    // directory.removeChild(card_section)
+                    // cards.forEach(displayList)
+            }
+        })
+
+        grid.addEventListener("click", () => {
+            cards.forEach(displayCards);
+
+        })
+
 
     })
