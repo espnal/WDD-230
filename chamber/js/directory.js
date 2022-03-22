@@ -76,11 +76,12 @@ fetch(url)
         cards.forEach(displayCards);
         list.addEventListener("click", () => {
 
-            let i = true
-            if (directory.length != cards.length, i = true) {
-                console.log(i)
-                    // directory.removeChild(card_section)
-                    // cards.forEach(displayList)
+
+            if (directory.length >= cards.length) {
+                directory.removeChild(card_section)
+                cards.forEach(displayList)
+
+
             }
         })
 
