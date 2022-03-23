@@ -50,22 +50,3 @@ localStorage.setItem("visits-ls", numVisits);
 // Day count & Visit count
 
 const daycount = document.getElementById("number-visits");
-
-
-const thisVisit = new Date();
-const lastVisit = window.localStorage.getItem("visitUpdate");
-
-if (lastVisit !== null) {
-    let timeDifference = thisVisit.getTime();
-    let dayDifference = parseInt(timeDifference / (1000 * 60 * 60 * 24));
-    console.log(dayDifference)
-    if (dayDifference < 1) {
-        daycount.textContent = `Welcome back! Your last visit was today.`;
-    } else if (dayDifference == 1) {
-        daycount.textContent = `Welcome back! Your last visit was ${dayDifference} day ago.`;
-    } else {
-        daycount.textContent = `Welcome back! Your last visit was ${dayDifference} days ago.`;
-    }
-} else {
-    daycount.textContent = `Welcome to your first visit! in days`;
-}

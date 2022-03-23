@@ -3,7 +3,7 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&unit
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject)
+
         const iconsrc = `https://openweathermap.org/img/wn/${jsObject.weather[0].icon}.png`
         const temperature = document.querySelector('#temperature').textContent = jsObject.main.temp.toFixed(0);
         const desc = jsObject.weather[0].description;
