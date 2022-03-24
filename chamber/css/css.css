@@ -580,21 +580,96 @@ form label.sbs {
     font-size: 18px;
 }
 
-.directory {
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40px;
+}
+
+.groud {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    padding: .5em;
+    color: #fff;
+    background-color: #00461e;
+    border: 2px solid #000;
+}
+
+#list:active {
+    color: #000;
+}
+
+#grid:active {
+    color: #000;
+}
+
+#list i {
+    font-size: 30px;
+    margin: .1em;
+    cursor: pointer;
+}
+
+#grid i {
+    font-size: 30px;
+    margin: .1em;
+    cursor: pointer;
+}
+
+.directory-list {
     display: grid;
     padding: 1em;
 }
 
-.directory section {
+.directory-list section {
     border: 1px solid #000;
-}
-
-.logo-company {
-    width: 200px;
-}
-
-.logo-company img {
+    padding: 1em;
+    background-color: #00461e;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
+}
+
+.directory-list section>h2,
+.directory-list p {
+    display: inline;
+    margin-left: 1em;
+    width: 100%;
+}
+
+.directory-list section img {
+    display: none;
+}
+
+.directory-grid section img {
+    width: 200px;
+    margin: .5em;
+}
+
+.directory-grid section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00461e;
+    color: #fff;
+}
+
+.directory-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 1em;
+    grid-gap: 5px;
+}
+
+.directory-grid section>h2,
+.directory-grid p {
+    text-align: center;
+    line-height: 30px;
 }
 
 .banner-container {
